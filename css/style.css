@@ -12,20 +12,42 @@ header {
   position: fixed;
   right: 0;
   left: 0;
-  height: 300px;
-  color: #fff;
+  height: 400px;
 }
 
-footer, header { padding: 30px 0; }
+.bcg_header { height: 400px; }
+
+.content_header { padding: 220px 0 0 25px; }
+
+.content_header h1, .slogan { font-family: 'Open Sans', sans-serif; color: #fff; }
+
+.content_header h1 {   
+  font-weight: bold; 
+  font-size: 85px;
+}
+
+.slogan { font-size: 25px; }
+
+footer { padding: 30px 20px; }
 
 #content_wrapper { 
   overflow: hidden; 
   position: relative; 
-  margin: 320px 0 0 0; 
+  margin: 420px 0 0 0; 
   z-index: 999; 
+  background-color: #fff;
 }
 
-#content_wrap { background-color: #fff; }
+#content_wrap {}
+
+#content_wrap img { width: 95%; }
+
+#why_wrapper { background-color: #999; padding: 20px 0; }
+
+#newsdrupal_wrapper { background-color: #eee; padding: 20px 0; }
+
+
+#external_links { height: 150px; background-color: #999; }
 
 /*
  * Off Canvas
