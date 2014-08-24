@@ -8,6 +8,10 @@ body {
 }
 body { padding-top: 70px; }
 
+h1 {}
+
+h2 { padding: 0 0 15px 15px; }
+
 header { 
   position: fixed;
   right: 0;
@@ -28,8 +32,6 @@ header {
 
 .slogan { font-size: 25px; }
 
-footer { padding: 30px 20px; }
-
 #content_wrapper { 
   overflow: hidden; 
   position: relative; 
@@ -38,18 +40,31 @@ footer { padding: 30px 20px; }
   background-color: #fff;
 }
 
+#content_wrap, #why_wrapper, #drupalsite_wrapper, 
+#newsdrupal_wrapper, #aboutus_wrapper, #community_wrapper { padding: 35px 0 50px 0; }
+
 #content_wrap {}
 
-#content_wrap img { width: 95%; }
+#content_wrap img { width: 95%; margin: 0 0 10px 0; }
 
-#why_wrapper { background-color: #999; padding: 20px 0; }
+#why_wrapper { background-color: #999; }
 
-#newsdrupal_wrapper { background-color: #eee; padding: 20px 0; }
+#why_wrapper img, #community_wrapper img { float: left; margin-right: 10px; }
+
+#newsdrupal_wrapper { background-color: #eee; }
+
+#content_wrap .btn-default, #drupalsite_wrapper .btn-default { margin: 40px 0 0 0; }
+
+#aboutus_wrapper a { color: #fff; }
+
+#aboutus_wrapper { background-color: #999; color: #fff; }
+
+#aboutus_wrapper .block_links { border-right: solid 1px #888; }
 
 
-#external_links { height: 150px; background-color: #999; }
+footer { padding: 30px 20px; background-color: #eee; }
 
-/*
+/*aboutus_wrapper
  * Off Canvas
  * --------------------------------------------------
  */
