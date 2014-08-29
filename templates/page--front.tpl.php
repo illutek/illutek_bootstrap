@@ -172,6 +172,11 @@
     <script src="<?php print base_path() . path_to_theme(); ?>/js/jquery.backstretch.js"></script>
 
     <script>
-      var base = Drupal.settings.basePath + 'sites/default/files/';
-      $(".bcg_header").backstretch([base + 'header_image2.jpg']);
+      (function($){
+        $(document).ready(function(){
+          var base = window.Drupal.settings.basePath + 'sites/default/files/';
+          $(".bcg_header").backstretch([base + 'header_image2.jpg']);
+        });
+      }(jQuery))
+
     </script>
