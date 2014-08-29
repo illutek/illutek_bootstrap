@@ -1,0 +1,19 @@
+name = themeDrupalCom
+description = Is voor mij een oefening geweest om de nieuwe site van Drupal.com na te bouwen, niet meer en niet minder. ook de eerste keer dat ik het framework Bootstrap gebruik.
+version = VERSION
+core = 7.x
+
+stylesheets[all][] = css/bootstrap.css
+stylesheets[all][] = css/style.css
+
+scripts[] = js/ie-emulation-modes-warning.js
+scripts[] = js/ie10-viewport-bug-workaround.js
+
+regions[content] = Content
+regions[newsdrupal] = Drupal nieuws
+regions[drupalsite] = Drupal sites
+
+version = "7.x-1.1"
+core = "7.x"
+project = "themeDrupalCom"
+datestamp = "1408911360"
