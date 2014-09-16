@@ -1,5 +1,5 @@
 <?php if ($teaser): ?>
-  <div class="col-6 col-sm-6 col-lg-3">
+  <div class="col-6 col-sm-6 col-lg-3" id="teaser_news_wrap">
     <div id="node-<?php print $node->nid; ?>" class="<?php print $classes; ?> clearfix"<?php print $attributes; ?>>
 
       <?php print render($title_prefix); ?>
