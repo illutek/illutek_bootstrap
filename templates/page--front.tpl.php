@@ -37,7 +37,6 @@
         </div><!-- end bcg_header -->
       </header>
 
-      
 
   <div id="links_wrapper">
       <div id="links_wrap" class="container">
@@ -113,13 +112,15 @@
                <?php print render($page['drupalsite']); ?>
             </div><!-- row -->
           </div>
-          <a class="btn btn-default" href="#" role="button">Meer Drupal sites</a>
+          <div class="btn_wrap">
+            <a class="btn btn-default" href="node/10" role="button">Meer Drupal sites</a>
+          </div><!-- end .btn_wrap -->
         </div><!-- end drupalsite_content -->
 
       </div><!-- end drupalsite_wrapper -->
-
       <div id="aboutus_wrapper">
         <div id="links" class="container">
+
           <h2>Meer van ons</h2>
           <div class=" col-sm-6 col-lg-6">
                 <div class="block_links">
@@ -174,8 +175,13 @@
     <script>
       (function($){
         $(document).ready(function(){
-          var base = window.Drupal.settings.basePath + 'sites/default/files/';
-          $(".bcg_header").backstretch([base + 'header_image2.jpg']);
+          var base = window.Drupal.settings.basePath + 'sites/all/themes/themeDrupalCom/images/';
+          $(".bcg_header").backstretch([
+            base + 'header_image2.jpg',
+            base + 'header_image1.jpg',
+            base + 'header_image3.jpg',
+            base + 'header_image.jpg'], 
+            {fade: 750, duration: 4000});
         });
       }(jQuery))
 
