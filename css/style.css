@@ -8,9 +8,19 @@ body {
 }
 body { padding-top: 70px; }
 
+/*
+* admin menu lager plaatsen
+*/
+#toolbar { margin-top: 50px;  }
+.toolbar-menu { }
+
 h1 {}
 
 h2 { padding: 0 0 15px 15px; }
+
+img { height: auto; }
+
+.title_node { color: #428bca; }
 
 header { 
   position: fixed;
@@ -33,7 +43,7 @@ header {
 .slogan { font-size: 25px; }
 
 #links_wrapper { 
-  overflow: hidden; 
+  overflow: hidden;
   position: relative; 
   margin: 420px 0 0 0; 
   z-index: 0; 
@@ -44,13 +54,58 @@ header {
 #newsdrupal_wrapper, #aboutus_wrapper, #community_wrapper { padding: 35px 0 50px 0; }
 
 
-#links_wrap img, #drupalsite_wrap img { width: 95%; margin: 0 0 10px 0; }
+#links_wrap img, #drupalsite_wrap img { width: 100%; margin: 0 0 10px 0; }
+
+#drupalsite_wrap { margin-top: 10px; }
+
+#drupalsite_wrap .btn_wrap { margin-left: 15px; }
+
+#drupalsites_pagewrap { /* deze div is ingesteld in de page Drupal sites view */
+    width: 230px;
+    float: left;
+    margin: 30px 30px 0 0;
+    min-height: 380px;
+    border: solid 1px #cbcbcb;
+    padding: 0 15px 0 15px;
+}
+
+.table_view {
+    /*background-image: url("../images/table_view.png");
+    background-repeat: no-repeat;
+    background-position: left center;*/
+}
+
+.list_view {}
+
+#drupalsites_pagewrap h2 {
+    font-size: 18px;
+    color: #428bca;
+    padding: 0 0 15px 0;
+}
+
+#drupalsites_pagewrap .drupalsites_url {
+    margin: 0 0 15px 0;
+}
+
+#drupalsites_pagewrap .drupalsites_info {
+    margin-top: 10px;
+}
 
 #why_wrapper { background-color: #999; }
 
 #why_wrapper img, #community_wrapper img { float: left; margin-right: 10px; }
 
+/*
+*news region
+*/
+
 #newsdrupal_wrapper { background-color: #eee; }
+
+#newsdrupal_wrapper p { text-align: justify; }
+
+#teaser_news_wrap { min-height: 350px; }
+
+/**/
 
 #content_wrap .btn-default, #drupalsite_wrapper .btn-default { margin: 40px 0 0 0; }
 
@@ -62,6 +117,61 @@ header {
 
 
 footer { padding: 30px 20px; background-color: #eee; }
+
+/*
+* overlay system drupal sites moet dit zeker voor het responsief gedeelte nog instellen
+*-----------------------------------------------
+* todo dit stuk respnsief maken
+*/
+
+.drupal_sites_wrap {
+  max-width: 500px;
+  height: 360px;
+  overflow: hidden;
+  position: relative;
+}
+
+.drupal_sites_wrap img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: inherit;
+  width: auto;
+  height: 100%;
+  float: left;
+  transition: all 0.8s;
+  -moz-transition: all 0.8s;
+}
+
+.drupal_sites_wrap .image_overlay {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0%;
+  left: 100%;
+  padding: 10% 4%;
+  color: rgba(255,255,255,1);
+  transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.4s;
+  background-color: #3253ad;
+}
+
+.drupal_sites_wrap:hover .image_overlay {
+  display: block !important;
+  color: rgba(255,255,255,1);
+  background:rgba(50,83,173,0.90);
+  left: 0px;
+  top: 0px;
+}
+
+.drupal_sites_wrap .url {
+  line-height: 48px;
+  padding: 0 0 0 54px;
+  background: url("../images/url_icon.png") no-repeat left center;
+}
+
+.drupal_sites_wrap .url a:hover { color: #fff; }
+
 
 /*aboutus_wrapper
  * Off Canvas
@@ -106,4 +216,5 @@ footer { padding: 30px 20px; background-color: #eee; }
     top: 0;
     width: 50%; /* 6 columns */
   }
+
 }
