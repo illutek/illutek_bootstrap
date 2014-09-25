@@ -60,36 +60,7 @@ header {
 
 #drupalsite_wrap .btn_wrap { margin-left: 15px; }
 
-#drupalsites_pagewrap { /* deze div is ingesteld in de page Drupal sites view */
-    width: 230px;
-    float: left;
-    margin: 30px 30px 0 0;
-    min-height: 380px;
-    border: solid 1px #cbcbcb;
-    padding: 0 15px 0 15px;
-}
 
-.table_view {
-    /*background-image: url("../images/table_view.png");
-    background-repeat: no-repeat;
-    background-position: left center;*/
-}
-
-.list_view {}
-
-#drupalsites_pagewrap h2 {
-    font-size: 18px;
-    color: #428bca;
-    padding: 0 0 15px 0;
-}
-
-#drupalsites_pagewrap .drupalsites_url {
-    margin: 0 0 15px 0;
-}
-
-#drupalsites_pagewrap .drupalsites_info {
-    margin-top: 10px;
-}
 
 #why_wrapper { background-color: #999; }
 
@@ -122,6 +93,7 @@ footer { padding: 30px 20px; background-color: #eee; }
 * overlay system drupal sites moet dit zeker voor het responsief gedeelte nog instellen
 *-----------------------------------------------
 * todo dit stuk respnsief maken
+* Drupal sites gedeelte op de home pagina
 */
 
 .drupal_sites_wrap {
@@ -172,6 +144,35 @@ footer { padding: 30px 20px; background-color: #eee; }
 
 .drupal_sites_wrap .url a:hover { color: #fff; }
 
+/*
+* Drupal sites gedeelte op de lees meer pagina deze code zorgt voor
+* het verwisselen van uitzicht van deze view tussen list (table) en grid (grid)
+*/
+
+.grid-view #drupalsites_pagewrap { /* deze div is ingesteld in de page Drupal sites view */
+    width: 230px;
+    float: left;
+    margin: 30px 30px 0 0;
+    min-height: 380px;
+    border: solid 1px #cbcbcb;
+    padding: 0 15px 0 15px;
+}
+
+.grid-view #drupalsites_pagewrap h2 {
+    font-size: 18px;
+    color: #428bca;
+    padding: 0 0 15px 0;
+}
+
+.grid-view #drupalsites_pagewrap .drupalsites_url {
+    margin: 0 0 15px 0;
+}
+
+.grid-view #drupalsites_pagewrap .drupalsites_info {
+    margin-top: 10px;
+}
+
+.list-view {}
 
 /*aboutus_wrapper
  * Off Canvas

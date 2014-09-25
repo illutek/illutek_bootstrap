@@ -8,6 +8,7 @@ stylesheets[all][] = css/style.css
 
 scripts[] = js/ie-emulation-modes-warning.js
 scripts[] = js/ie10-viewport-bug-workaround.js
+scripts[] = js/script.js
 
 regions[content] = Content
 regions[newsdrupal] = Drupal nieuws

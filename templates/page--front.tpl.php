@@ -159,8 +159,7 @@
           <p>&copy; Company 2014 | <a href="#">cookies</a></p>
         </div>
       </footer>
-
-  </div><!-- end content_wrapper -->
+7  </div><!-- end content_wrapper -->
 
     <!-- Bootstrap core JavaScript
     ================================================== -->
