@@ -11,6 +11,7 @@ scripts[] = js/ie10-viewport-bug-workaround.js
 scripts[] = js/script.js
 
 regions[content] = Content
+regions[links] = Links
 regions[newsdrupal] = Drupal nieuws
 regions[drupalsite] = Drupal sites
 

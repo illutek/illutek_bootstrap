@@ -96,14 +96,18 @@ footer { padding: 30px 20px; background-color: #eee; }
 * Drupal sites gedeelte op de home pagina
 */
 
-.drupal_sites_wrap {
+.drupal_sites_wrap, .drupal_links_wrap {
   max-width: 500px;
   height: 360px;
   overflow: hidden;
   position: relative;
 }
 
-.drupal_sites_wrap img {
+.drupal_links_wrap {
+    margin: 0 0 30px 0;
+}
+
+.drupal_sites_wrap img, .drupal_links_wrap img {
   position: absolute;
   top: 0;
   left: 0;
@@ -115,7 +119,7 @@ footer { padding: 30px 20px; background-color: #eee; }
   -moz-transition: all 0.8s;
 }
 
-.drupal_sites_wrap .image_overlay {
+.drupal_sites_wrap .image_overlay, .drupal_links_wrap .image_overlay  {
   width: 100%;
   height: 100%;
   position: absolute;
@@ -128,7 +132,7 @@ footer { padding: 30px 20px; background-color: #eee; }
   background-color: #3253ad;
 }
 
-.drupal_sites_wrap:hover .image_overlay {
+.drupal_sites_wrap:hover .image_overlay, .drupal_links_wrap:hover .image_overlay {
   display: block !important;
   color: rgba(255,255,255,1);
   background:rgba(50,83,173,0.90);
@@ -136,13 +140,19 @@ footer { padding: 30px 20px; background-color: #eee; }
   top: 0px;
 }
 
-.drupal_sites_wrap .url {
-  line-height: 48px;
-  padding: 0 0 0 54px;
+.drupal_sites_wrap .url, .drupal_links_wrap .url {
+    margin: 25px 0 0 0;
+}
+
+.drupal_sites_wrap .url a, .drupal_links_wrap .url a {
+  padding: 24px 0 24px 54px;
   background: url("../images/url_icon.png") no-repeat left center;
 }
 
-.drupal_sites_wrap .url a:hover { color: #fff; }
+.drupal_sites_wrap .url a:hover, .drupal_links_wrap .url a:hover {
+    color: #fff;
+    /*background: url("../images/url_icon_hover.png") no-repeat left center;*/
+}
 
 /*
 * Drupal sites gedeelte op de lees meer pagina deze code zorgt voor
@@ -152,27 +162,49 @@ footer { padding: 30px 20px; background-color: #eee; }
 .grid-view #drupalsites_pagewrap { /* deze div is ingesteld in de page Drupal sites view */
     width: 230px;
     float: left;
-    margin: 30px 30px 0 0;
+    margin: 0 20px 10px 0;
     min-height: 380px;
     border: solid 1px #cbcbcb;
     padding: 0 15px 0 15px;
 }
 
-.grid-view #drupalsites_pagewrap h2 {
+.grid-view #drupalsites_pagewrap h2, .list-view #drupalsites_pagewrap h2 {
     font-size: 18px;
     color: #428bca;
     padding: 0 0 15px 0;
 }
 
-.grid-view #drupalsites_pagewrap .drupalsites_url {
+.grid-view #drupalsites_pagewrap .drupalsites_url,
+.list-view #drupalsites_pagewrap .drupalsites_url {
     margin: 0 0 15px 0;
 }
 
-.grid-view #drupalsites_pagewrap .drupalsites_info {
+.grid-view #drupalsites_pagewrap .drupalsites_info,
+.list-view #drupalsites_pagewrap .drupalsites_info{
     margin-top: 10px;
 }
 
-.list-view {}
+.list-view #drupalsites_pagewrap {
+    width: 49%;
+    min-height: 270px;
+    padding: 0 10px 10px 10px;
+    border: solid 1px #cbcbcb;
+    margin: 0 15px 15px 0;
+    float: left;
+}
+
+.list-view #drupalsites_pagewrap .printscreen_img {
+    padding: 0 20px 0 0;
+    float: left;
+}
+
+.list-view #drupalsites_pagewrap img {}
+
+.weergave { margin: 15px 0 30px 0; }
+
+.text_weergave { float: left; padding: 2px 10px 0 0; }
+
+.gallerij_weergave { margin: 0 15px 0 0; float: left; }
 
 /*aboutus_wrapper
  * Off Canvas
