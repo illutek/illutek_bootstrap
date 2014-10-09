@@ -125,7 +125,7 @@ footer { padding: 30px 20px; background-color: #eee; }
   position: absolute;
   top: 0%;
   left: 100%;
-  padding: 10% 4%;
+  padding: 5% 4%;
   color: rgba(255,255,255,1);
   transition: all 0.5s ease-in-out;
   -moz-transition: all 0.4s;
